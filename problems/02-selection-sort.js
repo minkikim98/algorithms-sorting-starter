@@ -9,20 +9,15 @@ function swap(arr, index1, index2) {
 }
 
 function selectionSort(list) {
-  
-
-  for (let i = 0; i < list.length; i++){
+  for (let i = 0; i < list.length; i++) {
     let minIdx = i;
-    for (let j = i; j < list.length; j++){
-      if (list[j] < list[minIdx] ){
+    for (let j = i; j < list.length; j++) {
+      if (list[j] < list[minIdx]){
         minIdx = j;
       }
-
     }
     swap(list, minIdx, i)
   }
-
-  
 }
 
 module.exports = {
